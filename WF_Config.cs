@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
+﻿/*
+Autor: Jose Vasquez
+E-mail: jf.vasquez@outlook.es
+*/
 namespace Space_Watcher
 {
     public partial class Space_Config : Form

@@ -1,3 +1,7 @@
+/*
+Autor: Jose Vasquez
+E-mail: jf.vasquez@outlook.es
+*/
 using Space_Sound;
 
 namespace Space_Watcher

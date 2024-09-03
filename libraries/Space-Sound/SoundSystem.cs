@@ -1,10 +1,9 @@
-﻿using System.Runtime.InteropServices;
+﻿/*
+Autor: Jose Vasquez
+E-mail: jf.vasquez@outlook.es
+*/
+using System.Runtime.InteropServices;
 using System.Text;
-
-
-
-
-
 namespace Space_Sound
 {
     public class SoundSystem
