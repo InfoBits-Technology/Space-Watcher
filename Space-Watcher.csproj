@@ -28,6 +28,7 @@
     <Content Include="bin\Debug\net8.0-windows\assets\background\pnl-l-001.png" />
     <Content Include="bin\Debug\net8.0-windows\assets\background\pnl-l-002.png" />
     <Content Include="bin\Debug\net8.0-windows\assets\background\pnl-l-003.png" />
+    <Content Include="bin\Debug\net8.0-windows\assets\model\enemy\level_1\e-001.png" />
     <Content Include="bin\Debug\net8.0-windows\assets\model\laser\l-001.png" />
     <Content Include="bin\Debug\net8.0-windows\assets\model\ships\s-0.png" />
     <Content Include="bin\Debug\net8.0-windows\assets\sound\001.wav" />
