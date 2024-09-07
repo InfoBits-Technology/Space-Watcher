@@ -25,6 +25,7 @@
     <Content Include="bin\Debug\net8.0-windows\assets\background\bg-001.jpg" />
     <Content Include="bin\Debug\net8.0-windows\assets\background\btn-001.png" />
     <Content Include="bin\Debug\net8.0-windows\assets\background\btn-h-001.png" />
+    <Content Include="bin\Debug\net8.0-windows\assets\background\explotion-001.gif" />
     <Content Include="bin\Debug\net8.0-windows\assets\background\pnl-l-001.png" />
     <Content Include="bin\Debug\net8.0-windows\assets\background\pnl-l-002.png" />
     <Content Include="bin\Debug\net8.0-windows\assets\background\pnl-l-003.png" />
@@ -34,6 +35,7 @@
     <Content Include="bin\Debug\net8.0-windows\assets\sound\001.wav" />
     <Content Include="bin\Debug\net8.0-windows\assets\sound\002.wav" />
     <Content Include="bin\Debug\net8.0-windows\assets\sound\003.wav" />
+    <Content Include="bin\Debug\net8.0-windows\assets\sound\explosion-001.wav" />
     <Content Include="bin\Debug\net8.0-windows\assets\sound\laser-001.wav" />
     <Content Include="bin\Debug\net8.0-windows\Config.json" />
   </ItemGroup>
