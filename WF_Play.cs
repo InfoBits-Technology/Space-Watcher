@@ -112,7 +112,7 @@ namespace Space_Watcher
 
         }
 
-        
+
         protected override void OnKeyDown(KeyEventArgs e)
         {
             int x = IShip.Location.X; int y = IShip.Location.Y;
@@ -203,7 +203,7 @@ namespace Space_Watcher
 
         private void Init_Enemy()
         {
-            if(Level == 1)
+            if (Level == 1)
             {
                 Enemy_Level = 9;
             }
@@ -211,10 +211,10 @@ namespace Space_Watcher
         }
         private void TEnemyLoad_Tick(object sender, EventArgs e)
         {
-            
+
             try
             {
-                if(enemy_init <= Enemy_Level)
+                if (enemy_init <= Enemy_Level)
                 {
 
                     if (enemy_init == Enemy_Level)
@@ -255,7 +255,7 @@ namespace Space_Watcher
             Random random_enemy = new();
             x = random_enemy.Next(40, screen_height - 100);
 
-            
+
             try
             {
                 foreach (Control enemy in this.Controls)
@@ -266,56 +266,57 @@ namespace Space_Watcher
                         {
                             enemy_count++;
                             string enemy_name = enemy.Name;
-                            //var obj = ((Control)sender);
-
-                            if (enemy.Top < screen_height-100)
+                            if (enemy.Top < screen_height - 100)
                             {
-                                if(enemy.Name == enemy_name)
+                                if (enemy.Name == enemy_name)
                                 {
                                     enemy.Top += enemy_count;
                                     enemy.Refresh();
                                     tEnemy_Start.Interval = 150;
-                                    
+
                                 }
                             }
                             else
                             {
-                                enemy.Location = new Point(x+100, y);
+                                enemy.Location = new Point(x + 100, y);
                             }
 
                             if (ILaser.Bounds.IntersectsWith(enemy.Bounds))
                             {
-                                enemy.Visible = false;
+                                enemy.BackColor = Color.Transparent;
+                                enemy.Width = 150;
+                                enemy.Height = 150;
+                                enemy.BackgroundImage = Image.FromFile(global_assets + "background/explotion-001.gif");
+                                enemy.BackgroundImageLayout = ImageLayout.Stretch;
+                                enemy.Refresh();
                                 soundSystem.Play(global_assets + @"sound\explosion-001.wav", "explosion001", "waveaudio");
+                                Coin(true);
+                                enemy.Visible = false;
+
                             }
                         }
 
                     }
                 }
-                //if (list_enemy.Count > 0)
-                //{
-                //    for (x = 0; x < list_enemy.Count; x++)
-                //    {
-                //        //var obj = ((Control)sender).Tag;
-                //        if (list_enemy[x].Life > 0)
-                //        {
-                //            string enemy_name = list_enemy[x].Name;
-                //            if (enemy_show.Name == enemy_name)
-                //            {
-                //                if (enemy_show.Top < 600)
-                //                {
-                //                    enemy_show.Top += 10;
-                //                }
-                //                else
-                //                {
-                //                    enemy_show.Location = new Point(x, 0);
 
-                //                }
-                //            }
-                //        }
-                //    }
-                //}
+            }
+            catch { throw; }
+        }
 
+        private void Coin(bool a)
+        {
+            try
+            {
+                if (!a)
+                {
+                    coin -= 1;
+                }
+                if (a)
+                {
+                    coin += 1;
+                }
+
+                lblCoin.Text = coin.ToString();
             }
             catch { throw; }
         }
