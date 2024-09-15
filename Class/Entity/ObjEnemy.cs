@@ -6,11 +6,23 @@ namespace Space_Watcher.Class.Entity
 {
     public class ObjEnemy
     {
-        public int Id { get; set; }
-        public int Life { get; set; }
-        public int Power { get; set; }
-        public decimal Position_X {  get; set; }
-        public decimal Position_Y { get; set; }
-        public string Name { get; set; }
+        static class Level_1
+        {
+            public static int Life = 2;
+            public static int Gif = 1;
+            public static int[] Quantity = [8];
+        }
+        static class Level_2
+        {
+            public static int Life = 4;
+            public static int Gif = 2;
+            public static int[] Quantity = [8, 6];
+        }
+        static class Level_3
+        {
+            public static int Life = 4;
+            public static int Gif = 2;
+            public static int[] Quantity = [8, 6, 4];
+        }
     }
 }

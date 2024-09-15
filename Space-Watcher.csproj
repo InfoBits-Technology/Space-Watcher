@@ -22,7 +22,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="WF_Start.resx~RF37e860a0.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="bin\Debug\net8.0-windows\assets\background\bg-001.jpg" />
+    <Content Include="bin\Debug\net8.0-windows\assets\background\bg-003.png" />
+    <Content Include="bin\Debug\net8.0-windows\assets\background\bg-004.png" />
     <Content Include="bin\Debug\net8.0-windows\assets\background\btn-001.png" />
     <Content Include="bin\Debug\net8.0-windows\assets\background\btn-h-001.png" />
     <Content Include="bin\Debug\net8.0-windows\assets\background\explotion-001.gif" />

@@ -29,28 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WF_Play));
-            PLive_Left = new Panel();
+            ILaser = new PictureBox();
             TLive_Left = new TableLayoutPanel();
             lblCoin = new Label();
             ICoin_Left = new PictureBox();
             ILive_Left = new PictureBox();
             lblLife = new Label();
-            ILaser = new PictureBox();
+            PLive_Left = new Panel();
+            ((System.ComponentModel.ISupportInitialize)ILaser).BeginInit();
             TLive_Left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ICoin_Left).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ILive_Left).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)ILaser).BeginInit();
             SuspendLayout();
             // 
-            // PLive_Left
+            // ILaser
             // 
-            PLive_Left.BackColor = Color.Transparent;
-            PLive_Left.BackgroundImage = (Image)resources.GetObject("PLive_Left.BackgroundImage");
-            PLive_Left.BackgroundImageLayout = ImageLayout.Stretch;
-            PLive_Left.Location = new Point(12, 732);
-            PLive_Left.Name = "PLive_Left";
-            PLive_Left.Size = new Size(222, 17);
-            PLive_Left.TabIndex = 3;
+            ILaser.BackColor = Color.Transparent;
+            ILaser.Location = new Point(878, 275);
+            ILaser.Name = "ILaser";
+            ILaser.Size = new Size(10, 40);
+            ILaser.TabIndex = 11;
+            ILaser.TabStop = false;
             // 
             // TLive_Left
             // 
@@ -64,12 +63,12 @@
             TLive_Left.Controls.Add(ICoin_Left, 2, 0);
             TLive_Left.Controls.Add(ILive_Left, 0, 0);
             TLive_Left.Controls.Add(lblLife, 1, 0);
-            TLive_Left.Location = new Point(12, 689);
+            TLive_Left.Location = new Point(12, 694);
             TLive_Left.Name = "TLive_Left";
             TLive_Left.RowCount = 1;
             TLive_Left.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             TLive_Left.Size = new Size(222, 37);
-            TLive_Left.TabIndex = 4;
+            TLive_Left.TabIndex = 10;
             // 
             // lblCoin
             // 
@@ -117,19 +116,21 @@
             lblLife.Text = "5";
             lblLife.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // ILaser
+            // PLive_Left
             // 
-            ILaser.BackColor = Color.Transparent;
-            ILaser.Location = new Point(593, 538);
-            ILaser.Name = "ILaser";
-            ILaser.Size = new Size(10, 40);
-            ILaser.TabIndex = 5;
-            ILaser.TabStop = false;
+            PLive_Left.BackColor = Color.Transparent;
+            PLive_Left.BackgroundImage = (Image)resources.GetObject("PLive_Left.BackgroundImage");
+            PLive_Left.BackgroundImageLayout = ImageLayout.Stretch;
+            PLive_Left.Location = new Point(12, 737);
+            PLive_Left.Name = "PLive_Left";
+            PLive_Left.Size = new Size(222, 17);
+            PLive_Left.TabIndex = 9;
             // 
             // WF_Play
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Gray;
             BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(1184, 761);
             ControlBox = false;
@@ -142,22 +143,22 @@
             Name = "WF_Play";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "WF_Playcs";
+            ((System.ComponentModel.ISupportInitialize)ILaser).EndInit();
             TLive_Left.ResumeLayout(false);
             TLive_Left.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)ICoin_Left).EndInit();
             ((System.ComponentModel.ISupportInitialize)ILive_Left).EndInit();
-            ((System.ComponentModel.ISupportInitialize)ILaser).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
         private TableLayoutPanel Table_Ship;
-        private Panel PLive_Left;
+        private PictureBox ILaser;
         private TableLayoutPanel TLive_Left;
-        private PictureBox ILive_Left;
-        private Label lblLife;
         private Label lblCoin;
         private PictureBox ICoin_Left;
-        private PictureBox ILaser;
+        private PictureBox ILive_Left;
+        private Label lblLife;
+        private Panel PLive_Left;
     }
 }
